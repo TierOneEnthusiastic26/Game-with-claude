@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tiny Quest – Pixel RPG</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Tiny Quest</h1>
+  <div id="hud">
+    <span>🪙 <b id="coins">0</b></span>
+    <span>🗝️ <b id="keys">0</b></span>
+    <span>📦 <b id="chests">0</b>/<span id="total">0</span></span>
+    <span id="where">Village</span>
+  </div>
+  <canvas id="game"></canvas>
+  <p id="msg">Walk with arrow keys / WASD. Find the key, open the locked house.</p>
+  <div id="pad">
+    <button data-d="up">▲</button>
+    <button data-d="left">◀</button>
+    <button data-d="down">▼</button>
+    <button data-d="right">▶</button>
+  </div>
+  <button id="restart" hidden>Play again</button>
+</main>
+<script src="game.js"></script>
+</body>
+</html>
